@@ -1,0 +1,232 @@
+body{	
+	width: 100%; /* Esto fue para el Parallax*/
+	font-family: 'Titillium Web', sans-serif;
+}
+
+*{
+	margin: 0;  /* Esto fue para el parallax*/
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Estilos de redes sociales de abajo */
+:root{
+	--facebook: #3b5999;
+	--instagram: #e4405f;
+	--twitter: #55acee;
+}
+
+.redes-container {
+	display: flex;
+	height: 13vh;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+
+.redes-container ul li{
+	display: inline-block;
+	margin: 0 5px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+}
+
+.redes-container ul li a {
+	display: block;
+	padding: 0 10px;
+	background: #333;
+	color: #fff;
+	line-height: 50px;
+	font-size: 18px;
+	box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+	transition: .2s;
+}
+
+.redes-container ul:hover a{
+	filter: blur(2px);
+}
+
+.redes-container ul li a:hover{
+	transform: translateY(-3px) scale(1.05);
+	box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+	filter: none;
+}
+
+.redes-container ul li .facebook:hover{
+	background: var(--facebook);
+}
+.redes-container ul li .instagram:hover{
+	background: var(--instagram);
+}
+.redes-container ul li .twitter:hover{
+	background: var(--twitter);
+}
+
+.copyright {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;   
+    font-weight: 300;
+    float: left;
+}
+.copyright a{
+    color: #fff;
+}
+.copyright a:hover {
+    text-decoration: underline;
+    color: #36CBD4;
+}
+
+.reservados {
+	margin-bottom: 0em; 
+}
+
+.last-div {
+	margin-top:10px;
+    background: #3e5f8a;
+    padding: 10px 0;
+    position: relative;
+}
+
+
+
+
+
+
+.parallax-directorio {
+	width: 100%;
+	height: 60vh;
+	background-image: url(img/parallax/directorio.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.texto-directorio{
+	background: #9c9c9c;
+	padding: 20px;
+	width: 450px; /*Para cambiarle el ancho a la las letras*/
+	text-align: center;
+	color: #fff;
+}
+
+.highlight-dark { /*Para ponerle sobra a la letras en color trasparente*/
+	background-color: rgba(0,0,0,.5);
+	padding: 20px;
+	display: inline-block;
+	color: #fff;
+}
+
+
+/*Estilos de las fotos redondeadas*/
+
+h4 {
+	font-size: 16px;
+	transition: all .4s;
+	padding: 0px;
+	margin: 1 0 0px 0;
+}
+
+
+.box:hover h4 {
+    color: #e63e72;
+    font-size: 17px;
+}
+
+span {
+	font-size: 15px;
+}
+
+.box:hover img{
+	transform: scale(1.1);
+}
+
+/* .container, .box, .titulo, .content, .redes-sociales{
+    width: 100%;
+}  */
+
+.container{
+    max-width: 1150px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    color: #505050;
+    line-height: 1.7;
+}
+
+.titulo{
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.titulo h1{
+    margin-bottom: 25px;
+}
+/*.content{
+    display: flex;
+}*/
+
+
+
+.box figure{
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+  
+   /* overflow: hidden; */ 
+}
+
+.box figure img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, .7);
+    transition: all .4s;
+    
+}
+
+/*Estilos de la barra de navegacion*/
+
+#menu li:hover {
+	/*background-color: #29A5DE;*/  
+	box-shadow: 4px 4px 1px rgba(167, 117, 10, 0.6);
+	transition: all .2s;
+}
+
+#menu ul li .dropdown-menu .dropdown-item:hover {    /*Es el color y sombra de los submenus*/
+	background-color: #f0e117;
+	box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.6);
+	transition: all .3s;
+	/*text-decoration: underline;*/
+}
+
+
+
+
+@media only screen and (min-width:320px) and (max-width:768px){
+.container{
+    width: 90%;
+}
+.content{
+    flex-wrap: wrap;
+
+}
+
+
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+.box{
+    width: 50%;
+}
+
+
+
+ 

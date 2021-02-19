@@ -1,0 +1,116 @@
+body{	
+	width: 100%; /* Esto fue para el Parallax*/
+	font-family: 'Titillium Web', sans-serif;
+}
+
+*{
+	margin: 0;  /* Esto fue para el parallax*/
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Estilos de la barra de navegacion*/
+
+#menu li:hover {
+	/*background-color: #29A5DE;*/  
+	box-shadow: 4px 4px 1px rgba(167, 117, 10, 0.6);
+	transition: all .2s;
+}
+
+#menu ul li .dropdown-menu .dropdown-item:hover {    /*Es el color y sombra de los submenus*/
+	background-color: #f0e117;
+	box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.6);
+	transition: all .3s;
+	/*text-decoration: underline;*/
+}
+
+.parallax-formatos {
+	width: 100%;
+	height: 70vh;
+	background-image: url(img/parallax/cajas.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.texto-formatos{
+	background: #9c9c9c;
+	padding: 20px;
+	width: 450px; /*Para cambiarle el ancho a la las letras*/
+	text-align: center;
+	color: #fff;
+}
+
+.highlight-dark { /*Para ponerle sobra a la letras en color trasparente*/
+	background-color: rgba(0,0,0,.5);
+	padding: 20px;
+	display: inline-block;
+	color: #fff;
+}
+
+h3, h4 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 300;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+
+/*Estilos del boton */
+.btn {
+	background-color: #4CAF50;
+	/*padding: 10px 25px;*/
+	/*display: inline-block;*/
+	margin-top: 0px;
+	
+}
+
+/*Estilos de Cards de Formatos */
+.container h3 {
+	text-align: center;
+}
+
+h6 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	margin: 0 0 20px 0;
+	text-align: justify;
+}
+
+.card-header-first {
+	margin-top: -30px;
+	height: 100px;
+	background: linear-gradient(-90deg, #0B07F5, #1E1C85); /*Colores degradados*/
+	box-shadow: 1px 5px 15px #a2a2a2;
+}
+
+
+/* Efecto sombra para las tarjetas */
+.card-section {
+	box-shadow: 0 2px 10px 0 rgba(210, 210, 210,.5), 0 3px 3px 0 rgba(0, 0, 0,.4);
+	transition: 0.3s;
+}
+
+/* Efecto sombra para las tarjetas al pasar el mouse*/
+.card-section:hover {
+	box-shadow: 5px 1px 40px #000000;
+	transform: translate(0px, -10px); 
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/*Estilos del boton */
+.btn {
+	/*background-color: #4CAF50; */
+	padding: 10px 25px;
+	/*display: inline-block;*/
+	align-content: center;
+	margin-top: 0px;
+}
